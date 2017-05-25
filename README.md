@@ -6,7 +6,7 @@
   - keywords: ```jquery node express```
 - Install Express.js for routes: ```npm install express --save```
   - will result in ```node_modules``` directory being created with subdirectory of ```express```
-  - ```--save``` flag will update Express.js
+  - ```--save``` flag will add/update Express.js key:value pair with version of Express.js
 
 - Create 'server.js'
 - Require Express.js in 'server.js'
@@ -35,3 +35,12 @@ app.get('/', function(req, res){
 - Open 'localhost:5678'
 - Should see in browser "I came from the server!"
 - Should see "base URL hit" in the terminal
+
+- CRTL + C ---> stops server (NOT CMD + C)
+
+- Add node_modules to .gitignore
+
+### Respond with HTML:
+- create "views" folder
+- create 'index.html' within this folder
+- put some HTML in there
