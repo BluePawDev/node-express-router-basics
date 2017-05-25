@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
 // listen
 app.listen(5678, function(){
@@ -9,5 +10,8 @@ app.listen(5678, function(){
 // base URL
 app.get('/', function(req, res){
   console.log('base URL was hit'); // displayed in terminal
-  res.send('I came from the server!'); // displayed in browser pointed at localhost:5678
-});
+  // send file at resolved path
+  // displayed in browser pointed at localhost:5678
+  // res.send('I came from the server!');
+  res.sendFile(path.resolve('views/index.html'));
+}); // end base URL

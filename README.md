@@ -44,3 +44,5 @@ app.get('/', function(req, res){
 - create "views" folder
 - create 'index.html' within this folder
 - put some HTML in there
+- add ```var path = require('path');``` at top of server file with other requires
+- change res.send line to ```res.sendFile(path.resolve('views/index.html'));```
