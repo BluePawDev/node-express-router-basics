@@ -54,3 +54,8 @@ app.get('/', function(req, res){
 
 Set public folder to "static" using express: ```app.use(express.static('public'));```
 -source in  JavaScript in HTML: ```<script type="text/javascript" src='scripts/songs.js'></script>```
+
+- check that sourcing is working
+- repeat for jQuery
+
+Setup HTML interface
