@@ -46,3 +46,11 @@ app.get('/', function(req, res){
 - put some HTML in there
 - add ```var path = require('path');``` at top of server file with other requires
 - change res.send line to ```res.sendFile(path.resolve('views/index.html'));```
+
+### Add JavaScript/jquery
+- create "public" folder in root
+- create "scripts" folder in "public"
+- create client-side JavaScript in "scripts"
+
+Set public folder to "static" using express: ```app.use(express.static('public'));```
+-source in  JavaScript in HTML: ```<script type="text/javascript" src='scripts/songs.js'></script>```
