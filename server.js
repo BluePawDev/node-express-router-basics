@@ -1,9 +1,11 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require('body-parser');
 
 // users
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // globals
 var songs = [];
@@ -24,8 +26,14 @@ app.get('/', function(req, res){
 
 app.get('/allSongs', function(req, res){
   console.log('get /songs hit');
-  var objectToSend = {
+  var responseObj = {
     allSong: songs
   };
-  
+  res.send(responseObj);
 }); // end get /songs
+
+app.post('/newSong', function(req, res){
+  console.log('song hit to /newSong', req.body);
+  songs.push(req.body);
+  res.send('meow');
+});
