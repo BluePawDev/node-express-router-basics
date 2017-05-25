@@ -10,11 +10,12 @@
 
 - Create 'server.js'
 - Require Express.js
+```var express = require('express');```
 - Setup and Express.js app
-```var express = require('express');
-var app = express();
+```var app = express();
 
 // listen
 app.listen(5678, function(){
   console.log('server up : 5678');
-});```
+});
+```
