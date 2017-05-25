@@ -1,0 +1,27 @@
+{
+  "name": "jen_stack_start",
+  "version": "1.0.0",
+  "description": "jen stack start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BluePawDev/node-express-router-basics.git"
+  },
+  "keywords": [
+    "jquery",
+    "node",
+    "express"
+  ],
+  "author": "Jason Ruby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BluePawDev/node-express-router-basics/issues"
+  },
+  "homepage": "https://github.com/BluePawDev/node-express-router-basics#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
