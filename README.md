@@ -30,6 +30,7 @@ app.get('/', function(req, res){
   console.log('base URL was hit'); // displayed in terminal
   res.send('I came from the server!'); // displayed in browser pointed at localhost:5678
 });```
+
   - Open 'localhost:5678'
   - Should see in browser "I came from the server!"
   - Should see "base URL hit" in the terminal
