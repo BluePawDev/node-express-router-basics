@@ -33,8 +33,7 @@ var getSongs = function(){
     success: function(response){
       console.log('back from server with:', response);
       for (var i = 0; i < response.allSongs.length; i++) {
-        $('#outputDiv').append('<p>response.allSongs[i].song + ' by ' + response.allSongs[i].artist
-      }
+        $('#outputDiv').append();
       // when back from server update displayed
       console.log('get /allSongs hit');
     }
